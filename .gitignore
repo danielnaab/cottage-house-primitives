@@ -10,7 +10,6 @@
 *.log
 *.pot
 *.pyc
-local_settings.py
 dev.sqlite
 build/
 dist/
@@ -18,6 +17,7 @@ dist/
 #data
 /media/
 /static/
+/saleor/settings/local.py
 /saleor/static/components/
 /saleor/static/css/
 /saleor/static/fonts/*
