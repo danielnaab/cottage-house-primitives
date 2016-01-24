@@ -106,6 +106,7 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.locale.LocaleMiddleware',
+    'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
     'babeldjango.middleware.LocaleMiddleware',
     'saleor.cart.middleware.CartMiddleware',
     'saleor.core.middleware.DiscountMiddleware',
@@ -125,8 +126,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.redirects',
 
-    # Local apps
+    # Local apps - saleor upstream
     'saleor.userprofile',
     'saleor.product',
     'saleor.cart',
@@ -135,6 +137,9 @@ INSTALLED_APPS = [
     'saleor.order',
     'saleor.registration',
     'saleor.dashboard',
+
+    # Local apps - custom for CHP
+    'saleor.chpstuff',
 
     # External apps
     'versatileimagefield',

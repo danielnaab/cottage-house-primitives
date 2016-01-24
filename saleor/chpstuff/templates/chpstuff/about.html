@@ -1,0 +1,46 @@
+{% extends "chpstuff/base.html" %}
+
+{% block title %}About Us — {{ block.super }}{% endblock %}
+
+{% block breadcrumb %}
+    {{ block.super }}
+    <li><a href="{% url 'chpstuff:about' %}">About Us</a></li>
+{% endblock breadcrumb %}
+
+{% block outercontent %}
+    <div itemscope itemtype="http://schema.org/AboutPage">
+        <div class="row">
+            <div class="col-sm-6 col-sm-push-6">
+                <dl>
+                    <dt>Hours</dt>
+                    <dd>Monday: 10am - 4pm;  Tuesday-Saturday: 10am - 5pm;  Sunday - Appointment</dd>
+                    <dt></dt>
+                    <dt>Phone</dt>
+                    <dd>(608) 592-7474</dd>
+                    <dt>Mail</dt>
+                    <dd>120 S. Main Street<br>Lodi, WI 53555</dd>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:contact@cottagehouseprimitives.com">contact@cottagehouseprimitives.com</a></dd>
+                </dl>
+            </div>
+            <div class="col-sm-6 col-sm-pull-6">
+                <p>Cottage House Primitives is located on Main Street in the heart of historic downtown Lodi, Wisconsin.</p>
+                <p>Lodi is easily accessible from the following routes:</p>
+                <dl>
+                    <dt>From Madison</dt>
+                    <dd>Via I90-94 North &ndash; West on Highway 60 to Lodi</dd>
+                    <dd>Via Hwy 113 North through Waunakee &amp; Dane to Lodi</dd>
+                    <dt>From Middleton</dt>
+                    <dd>Via Hwy 12 North  &ndash; East at Highway P (Springfield Corners) &ndash; then merge with 113 North to Lodi &ndash; 17 mile.</dd>
+                    <dt>From Sauk/Prairie</dt>
+                    <dd>Via Hwy 60 East to Lodi &ndash; 12 miles</dd>
+                </dl>
+                <p>Lodi is just five minutes south of the Colsac III Free Ferry &ndash; a scenic ride across the Wisconsin River on your way to Devils Lake State Park and Circus World Museum at Baraboo.  A great stopping point on the Ice Age Trail, Lodi's Spring Creek winds through town, past the Lodi Prairie Gardens, through historic downtown, Susie The Duck landing, and north through Goeres and Haberman Parks.</p>
+                <p> For more information visit <a href="http://www.historicdowntownlodi.com">www.historicdowntownlodi.com</a>.</p>
+            </div>
+        </div>
+        <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.049845076636!2d-89.52856991979421!3d43.31321597923657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8807053ea7c6fbc3%3A0x688c9a0c91d1b79b!2sCottage+House+Primitives!5e0!3m2!1sen!2sus!4v1453665498205" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+{% endblock %}
