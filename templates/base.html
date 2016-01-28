@@ -82,28 +82,30 @@
             {% endfor %}
         </div>
         {% endif %}
-        <div class="container">
-            {% block outerbreadcrumb %}
-            <ul class="breadcrumb" itemprop="breadcrumb">
-                {% block breadcrumb %}
-                <li>
-                    <a href="/">{% trans "Home" %}</a>
-                </li>
-                {% endblock breadcrumb %}
-            </ul>
-            {% endblock outerbreadcrumb %}
-            {% block outercontent %}
-            <div class="row">
-                <div class="col-sm-12">
-                    {% block content %}
-                        <div class="row">
-                            {% include "category/_items.html" %}
-                        </div>
-                    {% endblock content %}
+        {% block center %}
+            <div class="container">
+                {% block outerbreadcrumb %}
+                <ul class="breadcrumb" itemprop="breadcrumb">
+                    {% block breadcrumb %}
+                    <li>
+                        <a href="/">{% trans "Home" %}</a>
+                    </li>
+                    {% endblock breadcrumb %}
+                </ul>
+                {% endblock outerbreadcrumb %}
+                {% block outercontent %}
+                <div class="row">
+                    <div class="col-sm-12">
+                        {% block content %}
+                            <div class="row">
+                                {% include "category/_items.html" %}
+                            </div>
+                        {% endblock content %}
+                    </div>
                 </div>
+                {% endblock outercontent %}
             </div>
-            {% endblock outercontent %}
-        </div>
+        {% endblock center %}
         {% block footer %}
             <footer>
                 <div class="container">

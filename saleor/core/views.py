@@ -8,5 +8,5 @@ def home(request):
     products = products.prefetch_related('categories', 'images',
                                          'variants__stock')
     return TemplateResponse(
-        request, 'base.html',
+        request, 'index.html',
         {'products': products, 'parent': None})
