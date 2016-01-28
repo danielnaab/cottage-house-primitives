@@ -136,6 +136,7 @@ INSTALLED_APPS = [
     'saleor.order',
     'saleor.registration',
     'saleor.dashboard',
+    'saleor.shipping',
 
     # Local apps - custom for CHP
     'saleor.chpstuff',
@@ -143,6 +144,7 @@ INSTALLED_APPS = [
     # External apps
     'versatileimagefield',
     'babeldjango',
+    'bootstrap3',
     'django_prices',
     'emailit',
     'mptt',
